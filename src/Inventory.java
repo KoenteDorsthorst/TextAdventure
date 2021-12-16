@@ -1,0 +1,9 @@
+public class Inventory {
+
+    private int inventorySize;
+    private Item[] items;
+
+    Inventory(int inventorySize){
+        this.inventorySize = inventorySize;
+    }
+}
