@@ -30,6 +30,8 @@ A map contains rooms and characters
 
 
 
+### Room
+A room contains characters
 
 
 
