@@ -23,4 +23,8 @@ public class Character {
     void die(){
 
     }
+
+    String getName(){
+        return name;
+    }
 }
