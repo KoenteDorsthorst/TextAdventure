@@ -12,19 +12,38 @@ public class Character {
         this.armorStat = armorStat;
     }
 
-    void attack(){
-
+    void attack(Character character){
+        character.setHealth(character.getHealth() - attackStat);
     }
+
+
 
     void getHurt(){
 
     }
 
-    void die(){
+    boolean isDead(){
+        return health <= 0;
 
     }
 
     String getName(){
         return name;
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public int getAttackStat(){
+        return attackStat;
+    }
+
+    public int getArmorStat(){
+        return armorStat;
+    }
+
+    private void setHealth(int set) {
+        health = set;
     }
 }
