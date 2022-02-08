@@ -1,4 +1,7 @@
-import java.util.Dictionary;
+import Classes.Map;
+import Classes.Player;
+import Classes.Controllers.BattleController;
+
 import java.util.Objects;
 import java.util.Scanner;
 
@@ -48,8 +51,6 @@ public class Main {
         while(gameLoop){
 
 
-
-
             System.out.println("what will you do?");
             System.out.println("1. Check map");
             System.out.println("2. Move");
@@ -57,12 +58,15 @@ public class Main {
             String choice = scanner.nextLine();
 
             switch (choice) {
-                case ("1") -> map.showMap();
-                case ("2") -> {
+                case ("1"):
+                    map.showMap();
+                    break;
+                case ("2"):
                     System.out.println("Which direction? Up, Right, Down or Left");
                     String direction = scanner.nextLine();
                     int horizontal = 0;
                     int vertical = 0;
+
                     if (Objects.equals(direction, "Up")) {
                         horizontal = -1;
                     } else if (Objects.equals(direction, "Down")) {
@@ -76,7 +80,7 @@ public class Main {
                     if (map.roomContainsMonster()) {
                         battleController.battle(map.getPlayerRoom());
                     }
-                }
+                    break;
             }
         }
     }

@@ -9,15 +9,15 @@ TextAdventure is a text base game. In the game you play as a character. A charac
 
 ## Concepts
 
-### Character
+### Classes.Character
 A character has a name, an amount of health, an attack stat and an armor stat. 
 A character can attack, get hurt and die.
 
-### Player
+### Classes.Player
 A player is a character. A player has a weapon, armor and a inventory. 
 A player can walk, check stats and open their inventory.
 
-### Monster
+### Classes.Monster
 A monster is a character. A monster has a drop table.
 A monster can drop loot.
 
@@ -25,29 +25,29 @@ A monster can drop loot.
 
 
 
-### Map
+### Classes.Map
 A map contains rooms and characters
 
 
 
-### Room
+### Classes.Room
 A room contains characters
 
 
 
-### Item
+### Classes.Item
 An item has a name
 
-### Weapon
+### Classes.Weapon
 A weapon is an item. A weapon has an attack stat.
 
-### Armor
+### Classes.Armor
 An armor is an item. An armor has an armor stat.
 
 
 
 
-### Inventory
+### Classes.Inventory
 An inventory has an inventory size and items
 
 
